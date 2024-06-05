@@ -40,8 +40,24 @@ def Forca(tentativa):
     print(f7)
 
 def Sorteiapalavra():
-    Lista = ["AMOR", "URSO", "VIDA", "AMAR", "ORAR", "ESSE", "ELAS", "HOJE"]
+    Lista = ["AMOR", "URSO", "VIDA", "AMAR", "ORAR", "ESSE", "ELAS",
+             "HOJE", "CASA", "NULO", "SAPO", "PARA", "VASO", "LOBO", 
+             "BOLO", "KIWI", "FOGO", "ÁGUA", "PATO", "TATU", "BOLA"]
     return random.choice(Lista) 
+
+def Apresentapalavra(letras, palavra):
+    npalavra = "_ " * len(palavra)
+    for L in range(0, len(letras)):
+        print(letras[L])
+        for P in range(0, len(palavra)):
+            #print(palavra[P])
+            if letras[L] == palavra[P]:
+                print(letras[L])
+                print(L)
+                print(P)
+    return npalavra
+
+print(Apresentapalavra("ABX", "ABACAXI"))
 
 def Continua():
     while True:
@@ -58,7 +74,8 @@ def Continua():
     return Acabou
 
 Jogar = True
-x=0
+x = 0
+
 #while Jogar:
 #    print(x)
 #    Forca(x)
