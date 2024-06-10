@@ -48,13 +48,9 @@ def Sorteiapalavra():
 def Apresentapalavra(letras, palavra):
     npalavra = "_ " * len(palavra)
     for L in range(0, len(letras)):
-        print(letras[L])
         for P in range(0, len(palavra)):
-            #print(palavra[P])
-            if letras[L] == palavra[P]:
-                print(letras[L])
-                print(L)
-                print(P)
+            if palavra[P] == letras[L]:
+               npalavra = npalavra [0 : P * 2] + palavra [P] + " " + npalavra[P * 2: ]
     return npalavra
 
 print(Apresentapalavra("ABX", "ABACAXI"))
