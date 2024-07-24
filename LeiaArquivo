@@ -1,0 +1,16 @@
+with open("arquivo.txt","r") as f:
+    txt = f.readline()
+    print(txt)
+    txt2=f.readline()
+    print(txt2)
+
+with open("arquivo2.txt","r") as f:
+    l = f.readlines()
+    print(l)
+    for ln in l:
+        print(ln)
+        
+with open("arquivo.txt","r") as f:
+    texto = f.read()
+    print(texto)
+   
