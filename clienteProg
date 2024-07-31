@@ -1,0 +1,16 @@
+from Cliente import Cliente
+
+cliente = Cliente("Douglas")
+
+print(cliente.__nome)
+
+print("Método nome do cliente: ",cliente.get_nome())
+
+cliente.set_nome('Douglas Soares')
+
+print("Método nome alterado do cliente: ",cliente.get_nome())
+
+print("Propriedade do cliente:",cliente.nome)
+
+cliente.nome = 'dgzada'
+print("Propriedade nome do cliente:", cliente.nome)
