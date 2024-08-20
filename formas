@@ -1,0 +1,26 @@
+def retangulo(tipoR, largura, altura):
+    r = 0
+    if tipoR == "Area":
+        r = largura * altura
+    elif tipoR == "perimetro":
+        r = 2 * (largura + altura)
+    return r
+
+def circulo(tipoC, raio):
+    c = 0
+    if tipoC == "Area":
+        c = 3.14 + (raio ** 2)
+    elif tipoC == "perimetro":
+        c = 2 * 3.14 * (raio)
+    return c
+
+def verifica_resultado(altura, largura, raio):
+    print(f'retangulo Area:{retangulo("Area", 8, 12)}')
+
+ra = retangulo("Area", 15, 4.5)
+print(f'Area:{ra}')
+
+ca = circulo("Area", 5)
+print(f'area:{ca}')
+
+verifica_resultado(8, 15, 5)
